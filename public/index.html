@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatter - Log in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="auth-wrap">
+    <div class="card auth-card">
+
+      <h1 class="auth-logo">Chatter</h1>
+      <p class="auth-sub">A tiny social media app</p>
+
+      <div class="tabs">
+        <button id="tab-login" class="tab active">Log in</button>
+        <button id="tab-register" class="tab">Sign up</button>
+      </div>
+
+      <!-- login form -->
+      <form id="login-form">
+        <input id="login-username" placeholder="Username" autocomplete="username">
+        <input id="login-password" type="password" placeholder="Password" autocomplete="current-password">
+        <p class="error" id="login-error"></p>
+        <button class="btn btn-full">Log in</button>
+      </form>
+
+      <!-- register form (hidden at first) -->
+      <form id="register-form" hidden>
+        <input id="reg-fullname" placeholder="Full name">
+        <input id="reg-username" placeholder="Username">
+        <input id="reg-password" type="password" placeholder="Password" autocomplete="new-password">
+        <p class="error" id="reg-error"></p>
+        <button class="btn btn-full">Create account</button>
+      </form>
+
+      <div class="demo-hint">Demo account: username <b>alex</b> / password <b>1234</b></div>
+
+    </div>
+  </main>
+
+  <footer class="footer">Chatter - mini social media app (task 2)</footer>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

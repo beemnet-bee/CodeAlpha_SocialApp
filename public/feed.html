@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatter - Feed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="feed.html" class="logo">Chatter</a>
+      <div class="nav-links">
+        <a href="feed.html" class="active">Feed</a>
+        <a href="explore.html">Explore</a>
+        <a href="profile.html">My Profile</a>
+        <button id="logout-btn" class="btn btn-ghost btn-small">Log out</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- box to write a new post -->
+    <div class="card composer">
+      <textarea id="post-text" placeholder="What's on your mind?" maxlength="300"></textarea>
+      <div class="composer-footer">
+        <span id="char-count" class="muted small">0 / 300</span>
+        <button id="post-btn" class="btn">Post</button>
+      </div>
+    </div>
+
+    <!-- all the posts go here -->
+    <div id="posts"></div>
+
+  </main>
+
+  <footer class="footer">Chatter - mini social media app (task 2)</footer>
+
+  <script src="js/helpers.js"></script>
+  <script src="js/feed.js"></script>
+</body>
+</html>
